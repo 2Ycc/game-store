@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2Y的游戏店</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/menus.css">
+<script src="js/time.js"></script>
+<script src="js/checkUname.js"></script>
+<!-- 获取登陆时存在导航栏的用户名，以便显示在body里 -->
+<script>
+    var testStr = window.location.search;
+    var content = testStr.match(/\?(\S*)/);
+    function printWelcom(){
+        if(content!=undefined) {
+            document.write(content[1]);
+        }else document.write("<a href='login.html'>请先登录!</a>");
+    }
+</script>
+</head>
+<!-- 在加载页面时就执行timer()函数获取当前时间 -->
+<body onload="timer()">
+<!-- 内容显示主体 -->
+<div id="container">
+    <div id="system_name"><h2>2Y的游戏店欢迎您的到来：<script>printWelcom()</script> <span id="uname"></span></h2></div>
+    <ul id="danghanglan_ul">
+        <li class="daohanglan_li"><a class="danghanglan_a" href="#menu">商品</a></li>
+        <li class="daohanglan_li"><a class="danghanglan_survey" onclick="keepValue_index()" target="_self">问卷调查</a></li>
+        <li class="daohanglan_li"><a class="danghanglan_survey" onclick="window.history.back()" target="_blank">返回上一页</a></li>
+        <li class="daohanglan_li"><a class="danghanglan_survey" onclick="window.history.forward()" target="_self">跳转下一页</a></li>
+        <li class="daohanglan_li" style="float: right;"><a id="sysTime" class="danghanglan_time" href="#"></a></li> 
+        <li class="daohanglan_li" style="float: right;"><a class="danghanglan_survey" onclick="window.location.href='login.html'" target="_self">退出登录</a></li>
+    </ul>
+    <!-- 左侧导航栏 -->
+    <div id="head">
+        <div class="pure-menu custom-restricted-width">
+            <span class="pure-menu-heading">游戏机</span>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">PS4 pro</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Xbox one</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Switch</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Switch lite</a></li>
+                <br>
+                <li class="pure-menu-heading">games</li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">塞尔达传说荒野之息</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">死亡搁浅</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">荒野大镖客:2</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">战神3</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">超级马里奥：奥德赛</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">刺客信条：起源</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">刺客信条：奥德赛</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">怪物猎人世界：冰原</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">马里奥赛车8</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 主体栏 -->
+    <div id="bodyz">
+        <!-- 每个商品的div -->
+        <div class="games">
+            <a href="javascript:;"><img src="img/1.jpg" width="198px" height="198px"  alt="游戏机"></a>
+            <div class="games_price"><span class="games_price_span">￥2799</span>
+                <div class="games_info"><a href="javascript:;">索尼Sony PS4 Pro 电玩游戏主机 家用娱乐体感电视游戏机 1TB黑色</a></div>
+            </div>        
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/2.jpg" width="198px" height="198px"  alt="游戏机"></a>
+            <div class="games_price"><span class="games_price_span">￥2799</span>
+                <div class="games_info"><a href="javascript:;">索尼Sony PS4 Pro 游戏主机 家用娱乐体感电视游戏机 1TB白色港版</a></div>
+            </div>
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/1.jpg" width="198px" height="198px"  alt="游戏机"></a>
+            <div class="games_price"><span class="games_price_span">￥2798</span>
+                <div class="games_info"><a href="javascript:;">索尼Sony PS4 Pro 电玩游戏主机 家用娱乐体感电视游戏机 1TB黑色</a></div>
+            </div>        
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/3.jpg" width="198px" height="198px"  alt="游戏机"></a>
+            <div class="games_price"><span class="games_price_span">￥2999</span>
+                <div class="games_info"><a href="javascript:;">微软 Xbox One X 1TB 黑色家庭娱乐主机 含黑色手柄</a></div>
+            </div>
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/4.jpg" width="198px" height="198px"  alt="游戏机"></a>
+            <div class="games_price"><span class="games_price_span">￥2099</span>
+                <div class="games_info"><a href="javascript:;">XBOXONE S微软XBOXONES XBOX ONE S 白色S版</a></div>
+            </div>
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/5.jpg" width="198px" height="198px"  alt="游戏机"></a>
+            <div class="games_price"><span class="games_price_span">￥2199</span>
+                <div class="games_info"><a href="javascript:;">任天堂switch 家用游戏机 掌机NS体感智能续航版游戏主机 日版</a></div>
+            </div>
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/5.jpg" width="198px" height="198px"  alt="游戏机"></a>
+            <div class="games_price"><span class="games_price_span">￥2200</span>
+                <div class="games_info"><a href="javascript:;">任天堂switch 家用游戏机 掌机NS体感智能续航版游戏主机 港版</a></div>
+            </div>
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/6.jpg" width="198px" height="198px"  alt="游戏机"></a>
+            <div class="games_price"><span class="games_price_span">￥1499</span>
+                <div class="games_info"><a href="javascript:;">Nintendo任天堂switch lite便携游戏掌机 掌上电玩NSL家用游戏主机 日版</a></div>
+            </div>
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/7.jpg" width="198px" height="198px"  alt="游戏"></a>
+            <div class="games_price"><span class="games_price_span">￥399</span>
+                <div class="games_info"><a href="javascript:;">全新PS4游戏 死亡搁浅 Death Stranding 中文正版 ps4版</a></div>
+            </div>
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/8.jpg" width="198px" height="198px"  alt="游戏"></a>
+            <div class="games_price"><span class="games_price_span">￥350</span>
+                <div class="games_info"><a href="javascript:;">NS全新 Switch塞尔达 萨尔达传说:荒野之息 中文</a></div>
+            </div>
+        </div>
+        <div class="games">
+            <a href="javascript:;"><img src="img/9.jpg" width="198px" height="198px"  alt="游戏"></a>
+            <div class="games_price"><span class="games_price_span">￥259</span>
+                <div class="games_info"><a href="javascript:;">全新PS4游戏 荒野大镖客2 中文正版</a></div>
+            </div>
+        </div> 
+        <div class="games">
+            <a href="javascript:;"><img src="img/9.jpg" width="198px" height="198px"  alt="游戏"></a>
+            <div class="games_price"><span class="games_price_span">￥259</span>
+                <div class="games_info"><a href="javascript:;">全新PS4游戏 荒野大镖客2 中文正版</a></div>
+            </div>
+        </div> 
+    </div>
+    <!-- 底部栏 -->
+    <div id="foot"> <p>Welcome to my store!!!</p> </div>
+</div>
+</body>
+<html>

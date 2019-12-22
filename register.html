@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login-register.css">
+    <link rel="stylesheet" href="css/pure.css">
+    <script src="js/check.js"></script>
+    <title>注册</title>
+</head>
+<body>
+    <!-- 主体显示 -->
+    <div class="head">
+        <legend>注册</legend>
+        <br>
+        <!-- 表单 -->
+        <form class="pure-form pure-form-aligned">
+            <div class="pure-control-group">
+                <label for="name"><strong>Username</strong></label>
+                <input id="mingzi" type="text" placeholder="Username" maxlength="12">&nbsp;&nbsp;<small>数字或字母开头总长6-12位</small> 
+            </div>
+            <div class="pure-control-group">
+                <label for="name"><strong>Telephone</strong></label>
+                <input id="tel" type="text" placeholder="Telephone" maxlength="11">&nbsp;&nbsp;<small>11位数字</small> 
+            </div>
+            <div class="pure-control-group">
+                <label for="password"><strong>Password</strong></label>
+                <input id="mima" type="password" placeholder="Password" maxlength="16" >&nbsp;&nbsp;<small>8到16位</small>
+            </div>
+            <div class="pure-control-group">
+                <label for="password"><strong>Password</strong></label>
+                <input id="queren" type="password" placeholder="Re-password" maxlength="16" >&nbsp;&nbsp;<small>确认密码</small>
+            </div>
+            <div class="pure-controls">
+                <label for="cb" class="pure-checkbox">
+                    <input id="cb" type="checkbox" onclick="checkBox()"> I've read the terms and conditions
+                </label>
+                <button id="btn-detail" type="button" class="pure-button pure-button-primary" disabled onclick="checkRegister()">Register</button>
+                <button type="button" class="pure-button pure-button-primary marg" onclick="login()">Login</button>
+            </div>
+        <br>
+        </form>
+    </div>
+</body>
+</html>

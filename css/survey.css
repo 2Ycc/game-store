@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(87, 117, 181);
+    font-family: Helvetica Neue,PingFang SC,Hiragino Sans GB,HeitiSC,Helvetica, Arial,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.content_box{
+    width: 734px;
+    height: 100%;
+    margin: 60px auto;
+    padding: 30px 40px 66px;
+    background-color: white;
+}
+
+.content_head{
+    width: 734px;
+    height: 138px;
+}
+
+.mtop{
+    margin-top: 20px;
+}
+
+#begin_content{
+    text-align: center;
+    font-size: 14px;
+    font-family: Helvetica Neue,PingFang SC,Hiragino Sans GB,HeitiSC,Helvetica, Arial,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
+
+.wjintro{
+    float: left;
+    width: 100%;
+    line-height: 24px;
+    text-align: left;
+    text-size-adjust: 100%;
+    font-size: 16px;
+    color: rgb(102,102,102);
+}
+
+.bar{
+    width: 734px;
+    height: 3px;
+    background-color: rgb(83, 164, 244);
+}
+
+.survey_ques{
+    padding-left: 15px;
+    width: 734px;
+    margin-top: 30px;
+}
+
+.title{
+    width: 100%;
+    font-size: 16px;
+    margin-left: -15px;
+    padding-bottom: 8px;
+    /* position: relative; */
+    padding-left: 5px;
+}
+
+.answer_title{
+    color: #666666;
+    font-size: 16px;
+}
+
+.asterisk{
+    color: #ff6d56;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.question{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.option_label{
+    padding-left: 10px;
+}
+
+.blank{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 2px 5px;
+}
+
+.submit{
+    padding: 10px;
+    margin: 10px;
+}
+
+.submit_btn{
+    padding: 10px 25px;
+}
+.return_btn{
+    padding: 10px 25px;
+    margin-left: 20px;
+}
